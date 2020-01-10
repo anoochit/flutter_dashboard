@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dashboard/services/db.dart';
 import 'services/auth.dart';
 import 'pages/home.dart';
 import 'pages/login.dart';
@@ -18,6 +19,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    
   }
 
   bool loginState = false;
@@ -37,7 +39,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Dashbard',
       theme: appTheme(),
       // Todo : Enable dark theme
-      //darkTheme: ThemeData.dark(),
+      darkTheme: ThemeData.dark(),
       home: (loginState == true) ? HomePage() : LoginPage(),
     );
   }

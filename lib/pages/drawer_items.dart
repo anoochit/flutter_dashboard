@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/auth.dart';
-
+import 'home.dart';
 import 'login.dart';
 
 Widget drawerMenuItems(BuildContext context) {
@@ -33,7 +33,8 @@ Widget drawerMenuItems(BuildContext context) {
           title: Text("Dashboard"),
           onTap: () {
             // TODO: Dashboard action
-            //Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));
+            Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (context) => HomePage()));
           },
         ),
         ListTile(

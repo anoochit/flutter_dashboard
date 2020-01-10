@@ -65,6 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   RaisedButton(
+                    hoverColor: Theme.of(context).primaryColorLight,
                     elevation: 1.0,
                     child: Text("SignIn"),
                     onPressed: () {
@@ -94,6 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                     width: 8.0,
                   ),
                   RaisedButton(
+                    hoverColor: Theme.of(context).primaryColorLight,
                     elevation: 1.0,
                     child: Text("Reset"),
                     onPressed: () {
